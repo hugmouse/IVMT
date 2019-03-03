@@ -1,5 +1,5 @@
 # IVMT
-## Instant View "Master Template" thing!
+### Instant View "Master Template" thing!
 The mistake of humanity specifically for the contest.
 
 # Pros:
