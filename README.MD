@@ -12,6 +12,6 @@ The mistake of humanity specifically for the contest.
 * ~~This template is perfect and works in 10 out of 10 templates!~~
 
 # My template is empty! Ah!
-* Just replace `body: //article` with your actuall body on the site!
+* Just replace `body: //article` with your actual body on the site!
 
 
