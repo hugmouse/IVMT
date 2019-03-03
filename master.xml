@@ -10,17 +10,8 @@
 @set_attr(src,./@data-tweet-id): $@
 @replace:
 
-# SHITTY RULES
-<pic>: //td/img
-<pic>: //td/div/img
-<pic>: //table/td/img
-<pic>: //td/strong/img
-<pic>: //td/..//img
-<pic>: //td/img
-<pic>: //td/div/img
-<pic>: //table/td/img
-<pic>: //td/strong/img
-<pic>: //td/..//img
+# PIC RULES
+<pic>: //img[ancestor::td] # @housemusicforhomelessepeople
 
 @set_attr("href",./img): //a[./img]/@href
 
@@ -29,8 +20,8 @@
 <div>: //p/img
 @after_el("./.."): //p/related
 
-# STYLING
-<aside>: //*[@style="text-align: center;"]
+# STYLING (add it if you want)
+# <aside>: //*[@style="text-align: center;"]
 
 # REPLACE BODY !!!
 body: //div[@class="block-new-content"]
