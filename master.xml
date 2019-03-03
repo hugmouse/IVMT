@@ -24,7 +24,7 @@
 # <aside>: //*[@style="text-align: center;"]
 
 # REPLACE BODY !!!
-body: //div[@class="block-new-content"]
+body: //article
 # REPLACE BODY !!!
 
 title: //meta[@property="og:title"]/@content
