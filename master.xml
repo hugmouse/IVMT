@@ -11,7 +11,8 @@
 @replace:
 
 # PIC RULES
-<pic>: //img[ancestor::td] # @housemusicforhomelessepeople
+# By @housemusicforhomelessepeople
+<pic>: //img[ancestor::td] 
 
 @set_attr("href",./img): //a[./img]/@href
 
@@ -28,6 +29,15 @@
 @map( //img ) {   
   $image: $@                       
   @set_attr(src, @srcset): $image
+}
+
+# YOUTUBE OBJECT FIXER
+# By @housemusicforhomelessepeople
+@if("//object[contains(@data, \"youtube\")]") {
+  @before(<iframe>): //object[contains(@data, \"youtube\")]
+  @replace("http://www.youtube.com/v/","https://www.youtube.com/embed/"): //object[contains(@data, "youtube")]/@data
+  @set_attr(src, "./next-sibling::object[contains(@data, \"youtube\")]/@data"): //iframe[next-sibling::object[contains(@data, "youtube")]]
+  @remove: //object[contains(@data, "youtube")]
 }
 
 # REPLACE BODY !!!
