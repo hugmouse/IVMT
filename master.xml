@@ -26,10 +26,13 @@
   
 # REPLACING srcset WITH src 
 # NOTE THAT IV DO NOT SUPPORT srcset!
-@map( //img ) {   
-  $image: $@                       
-  @set_attr(src, @srcset): $image
-}
+# SAFE IF IV STARTS SUPPORTING srcset
+# By @housemusicforhomelessepeople
+$setsrc: $body//img[@srcset]
+@set_attr(src_set, @srcset): 
+@replace("http.+w, ", ""): $setsrc/@src_set
+@replace("(jpe?g|png|gif).+w", "$1"): $setsrc/@src_set
+@set_attr(src, @src_set): $setsrc
 
 # YOUTUBE OBJECT FIXER
 # By @housemusicforhomelessepeople
