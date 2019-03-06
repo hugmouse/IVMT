@@ -8,6 +8,7 @@ The mistake of humanity specifically for the contest.
 * Replacing all //p/img with div!
 * Getting all (+-) info from OpenGraph!
 * Replacing all attrs `srcset` with `src`!
+* Youtube video as object fixer!
 * #### Nesting correction (by [@mushi_f](https://t.me/mushi_f))!
 # ~~Cons:~~
 * ~~This template is perfect and works in 10 out of 10 templates!~~
