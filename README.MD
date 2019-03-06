@@ -7,6 +7,7 @@ The mistake of humanity specifically for the contest.
 * Sometimes fixes twitter tweets!
 * Replacing all //p/img with div!
 * Getting all (+-) info from OpenGraph!
+* Replacing all attrs `srcset` with `src`!
 * #### Nesting correction (by [@mushi_f](https://t.me/mushi_f))!
 # ~~Cons:~~
 * ~~This template is perfect and works in 10 out of 10 templates!~~
